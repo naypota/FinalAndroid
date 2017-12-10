@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    android:orientation="vertical"
+    tools:context="com.example.user.finalandroid.MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:gravity="center"
+        android:text="คงเหลือ"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/Money_button"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="บันทึกรายรับ"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/Pay_Button"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:text="บันทึกรายจ่าย"
+        android:layout_toRightOf="@+id/Money_button"
+        android:layout_toEndOf="@+id/Money_button" />
+
+    <ListView
+        android:id="@+id/ListMoney"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

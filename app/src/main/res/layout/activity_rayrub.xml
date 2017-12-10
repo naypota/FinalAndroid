@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_dark"
+    tools:context="com.example.user.finalandroid.Pay">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="#ffffff"
+        android:id="@+id/relativeLayout"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Type_imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/ic_income"
+        android:layout_alignTop="@+id/relativeLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/relativeLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="บันทึก" />
+
+    <EditText
+        android:id="@+id/Money_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Type_imageView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF"
+        android:ems="16"
+        android:hint="จำนวนเงิน"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/Type_EditText"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/Money_EditText"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="56dp"
+        android:background="#FFFFFF"
+        android:ems="30"
+        android:hint="รายละเอียด"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>
